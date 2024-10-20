@@ -1,0 +1,8 @@
+# Ignore .gradle folder
+.gradle/
+
+# Ignore BStackImages folder
+BStackImages/
+
+# Ignore screenshots folder
+screenshots/
