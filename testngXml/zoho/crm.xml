@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="LeadsModuleSuite">
+    <listeners>
+        <listener class-name="com.zoho.util.ExtentReportListener" />
+    </listeners>
+    <test name="LeadsModuleTests">
+        <classes>
+            <class name="com.zoho.test.LeadTest" >
+            </class>
+        </classes>
+    </test>
+</suite>

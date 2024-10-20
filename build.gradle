@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.11.0'
+    implementation 'com.aventstack:extentreports:5.0.9'
+    implementation 'org.slf4j:slf4j-api:2.0.0'
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.5.2'
+    // Apache POI core module
+    implementation 'org.apache.poi:poi:5.2.2'
+    // Apache POI for Excel .xlsx files
+    implementation 'org.apache.poi:poi-ooxml:5.2.2'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+    useJUnitPlatform()
+}
