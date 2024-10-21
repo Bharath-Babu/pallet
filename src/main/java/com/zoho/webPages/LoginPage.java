@@ -25,6 +25,8 @@ public class LoginPage extends BasePage {
     @FindBy(id = "nextbtn")
     private WebElement logInButton;
 
+    @FindBy(id ="show-uName")
+    private WebElement welcomeHome;
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
@@ -45,7 +47,9 @@ public class LoginPage extends BasePage {
     }
 
     public boolean verifyHomePage() {
+        welcomeHome.isDisplayed();
         return driver.getCurrentUrl().contains("Home/begin");
+
     }
 
 }

@@ -52,6 +52,8 @@ public class LeadPage extends BasePage {
     @FindBy(xpath = "//lyte-yield[text()='OK, got it!']")
     private WebElement okPopUp;
 
+
+
     public LeadPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);

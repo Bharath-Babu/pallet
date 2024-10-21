@@ -15,7 +15,7 @@ public class WebDriverFactory {
             case "chrome":
                 WebDriverManager.chromedriver().clearDriverCache().setup();
                 driver = new ChromeDriver();
-                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(6));
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
                 break;
             case "firefox":
                 WebDriverManager.firefoxdriver().setup();
